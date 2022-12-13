@@ -1,6 +1,6 @@
 # LT Showcase
 
-## Options
+## Usage
 
 You can pass four flags to the built binary:
 1. `-album <int>` -- returns photos in a given album
@@ -27,12 +27,18 @@ $ ./photos -album 1 -title 'ut.*id'
 ## Running locally
 
 #### Install with Go
+
+Does not require cloning the repo.
+
 ```bash
 $ go install github.com/jclasley/lt_showcase
 $ lt_showcase -raw | jq
 ```
 
 #### Build and run
+
+Requires cloning the repo.
+
 ``` bash
 $ go build -o ./photos .
 $ ./photos -album 2 -title 'ut.*ed'

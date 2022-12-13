@@ -15,7 +15,7 @@ All flags can be used in any given combination, but might not return any results
 Example:
 
 ```bash
-./photos -album 1 -title 'ut.*id'
+$ ./photos -album 1 -title 'ut.*id'
 
 # Output:
 
@@ -27,10 +27,13 @@ Example:
 ## Running locally
 
 #### Install with Go
-`go install github.com/jclasley/lt_showcase`
+```bash
+$ go install github.com/jclasley/lt_showcase
+$ lt_showcase -raw | jq
+```
 
 #### Build and run
 ``` bash
-go build -o ./photos .
-./photos -album 2 -title 'ut.*ed'
+$ go build -o ./photos .
+$ ./photos -album 2 -title 'ut.*ed'
 ```
